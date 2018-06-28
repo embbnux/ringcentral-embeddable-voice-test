@@ -38,6 +38,7 @@
     "intl": "^1.2.5",
     "isomorphic-fetch": "^2.2.1",
     "locale-loader": "^1.4.10",
+    "localforage": "^1.7.2",
     "moment": "^2.19.3",
     "node-sass": "^4.5.3",
     "normalize-css": "^2.3.1",

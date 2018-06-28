@@ -43,7 +43,7 @@ import RegionSettings from 'ringcentral-integration/modules/RegionSettings';
 import Ringout from 'ringcentral-integration/modules/Ringout';
 import RolesAndPermissions from 'ringcentral-integration/modules/RolesAndPermissions';
 import Softphone from 'ringcentral-integration/modules/Softphone';
-import Storage from 'ringcentral-integration/modules/Storage';
+// import Storage from 'ringcentral-integration/modules/Storage';
 import Subscription from 'ringcentral-integration/modules/Subscription';
 import TabManager from 'ringcentral-integration/modules/TabManager';
 import Webphone from 'ringcentral-integration/modules/Webphone';
@@ -62,6 +62,7 @@ import Adapter from '../Adapter';
 import MessageStore from '../MessageStore';
 import Conversations from '../Conversations';
 import ThirdPartyService from '../ThirdPartyService';
+import Storage from '../Storage';
 
 import searchContactPhoneNumbers from '../../lib/searchContactPhoneNumbers';
 
