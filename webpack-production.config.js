@@ -53,6 +53,8 @@ config.plugins = [
     { from: 'src/index.html', to: 'index.html' },
     { from: 'src/proxy.html', to: 'proxy.html' },
     { from: 'src/redirect.html', to: 'redirect.html' },
+    { from: 'src/manifest.json', to: 'manifest.json' },
+    { from: 'src/service-worker.js', to: 'service-worker.js' },
   ]),
 ];
 

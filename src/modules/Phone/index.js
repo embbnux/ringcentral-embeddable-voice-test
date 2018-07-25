@@ -1,6 +1,7 @@
 import 'whatwg-fetch';
 import SDK from 'ringcentral';
 import RingCentralClient from 'ringcentral-client';
+import { hashHistory } from 'react-router';
 
 import { ModuleFactory } from 'ringcentral-integration/lib/di';
 import RcModule from 'ringcentral-integration/lib/RcModule';
@@ -130,6 +131,11 @@ import searchContactPhoneNumbers from '../../lib/searchContactPhoneNumbers';
     { provide: 'DialerUI', useClass: DialerUI },
     { provide: 'Adapter', useClass: Adapter },
     { provide: 'RouterInteraction', useClass: RouterInteraction },
+    {
+      provide: 'RouterInteractionOptions',
+      useValue: { history: hashHistory },
+      spread: true,
+    },
     { provide: 'Feedback', useClass: Feedback },
     { provide: 'ActiveCalls', useClass: ActiveCalls },
     { provide: 'Conference', useClass: Conference },
