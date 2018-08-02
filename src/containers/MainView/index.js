@@ -142,7 +142,7 @@ function mapToProps(_, {
     rolesAndPermissions.organizeConferenceEnabled &&
     conference.data
   );
-  const showContacts = rolesAndPermissions.ready && rolesAndPermissions.contactsEnabled
+  const showContacts = rolesAndPermissions.ready && rolesAndPermissions.contactsEnabled;
   const tabs = getTabs({
     unreadCounts,
     showCall,

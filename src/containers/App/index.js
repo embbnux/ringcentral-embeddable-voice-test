@@ -36,7 +36,6 @@ import CallsListPage from '../CallsListPage';
 
 export default function App({
   phone,
-  hostingUrl,
 }) {
   return (
     <PhoneProvider phone={phone}>
@@ -44,9 +43,7 @@ export default function App({
         <Router history={phone.routerInteraction.history} >
           <Route
             component={routerProps => (
-              <AppView
-                hostingUrl={hostingUrl}
-              >
+              <AppView>
                 {routerProps.children}
                 <CallBadgeContainer
                   hidden={routerProps.location.pathname === '/calls/active'}
@@ -229,5 +226,4 @@ export default function App({
 
 App.propTypes = {
   phone: PropTypes.object.isRequired,
-  hostingUrl: PropTypes.string.isRequired,
 };
