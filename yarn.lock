@@ -9333,10 +9333,9 @@ ringcentral-client@^1.0.0-beta.1:
     form-data "^2.1.2"
     isomorphic-fetch "^2.2.1"
 
-ringcentral-integration@^0.10.1:
+"ringcentral-integration@https://github.com/embbnux/ringcentral-js-widget#commons-release":
   version "0.10.1"
-  resolved "https://registry.yarnpkg.com/ringcentral-integration/-/ringcentral-integration-0.10.1.tgz#6bf383b7f15151831ef04972ac1660588dfd9de2"
-  integrity sha512-3+fq0Rh5nTblkKFL7Fmn+G+c8cH8rs52aqrqu0iKQXLvF4NeoQnrSd6oKe94qf/2x5UGfePT0R9nyYzufLJtog==
+  resolved "https://github.com/embbnux/ringcentral-js-widget#1d00f53bf22357342f809e20d82647a047993220"
   dependencies:
     file-loader "^2.0.0"
     json-mask "^0.3.8"
@@ -9346,15 +9345,14 @@ ringcentral-integration@^0.10.1:
     ramda "^0.25.0"
     redux "^3.5.2"
     reselect "^2.5.4"
-    ringcentral-web-phone "^0.6.2"
+    ringcentral-web-phone "https://github.com/vyshakhbabji/web-phone-1#patchqos"
     url-loader "^1.0.1"
     uuid "^3.3.2"
     yards "^0.1.4"
 
-ringcentral-web-phone@^0.6.2:
+"ringcentral-web-phone@https://github.com/vyshakhbabji/web-phone-1#patchqos":
   version "0.6.2"
-  resolved "https://registry.yarnpkg.com/ringcentral-web-phone/-/ringcentral-web-phone-0.6.2.tgz#7025572bba7cce6a449067db221911d930b05ea5"
-  integrity sha512-OqGdkQLws2woUeeE5eswlvj7xDgCZcZ9hXoZIRHnYEt1Hqv+Ro4AHIAVCoJfYJ7fafeiFPamOCAGkS8rJKuEGQ==
+  resolved "https://github.com/vyshakhbabji/web-phone-1#6b98e67871a78fb76fd5dfad6487f81160ff51a7"
   dependencies:
     sip.js "^0.11.6"
 
