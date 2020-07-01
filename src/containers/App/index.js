@@ -6,7 +6,7 @@ import { Router, Route } from 'react-router';
 import PhoneProvider from 'ringcentral-widgets/lib/PhoneProvider';
 import CallingSettingsPage from 'ringcentral-widgets/containers/CallingSettingsPage';
 import RegionSettingsPage from 'ringcentral-widgets/containers/RegionSettingsPage';
-import DialerPage from 'ringcentral-widgets/containers/DialerPage';
+// import DialerPage from 'ringcentral-widgets/containers/DialerPage';
 import ComposeTextPage from 'ringcentral-widgets/containers/ComposeTextPage';
 import IncomingCallPage from 'ringcentral-widgets/containers/IncomingCallPage';
 import CallCtrlPage from 'ringcentral-widgets/containers/CallCtrlPage';
@@ -43,6 +43,7 @@ import RecentActivityContainer from '../RecentActivityContainer';
 import ThirdPartyConferenceInviteButton from '../ThirdPartyConferenceInviteButton';
 import ThirdPartyContactSourceIcon from '../../components/ThirdPartyContactSourceIcon';
 
+import DialerPage from '../DialerPage';
 import SettingsPage from '../SettingsPage';
 import CallsListPage from '../CallsListPage';
 import CallLogSectionModal from '../CallLogSectionModal';
