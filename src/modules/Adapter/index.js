@@ -576,6 +576,19 @@ export default class Adapter extends AdapterModuleCore {
   })
 
   _controlCall(action, id, options) {
+    if (action === 'startRecord' || action === 'stopRecord') {
+      const session = id ? this._webphone.sessions.find(s => s.id === id) : this._webphone.activeSession;
+      if (!session) {
+        return;
+      }
+      //  don't handle record action when auto recording is enabled
+      if (session.direction === 'Inbound' && this._extensionInfo.serviceFeatures.AutomaticInboundCallRecording.enabled) {
+        return;
+      }
+      if (session.direction === 'Outbound' && this._extensionInfo.serviceFeatures.AutomaticOutboundCallRecording.enabled) {
+        return;
+      }
+    }
     switch (action) {
       case 'answer':
         this._webphone.answer(id || this._webphone.ringSessionId);
